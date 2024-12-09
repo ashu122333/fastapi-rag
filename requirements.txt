@@ -1,1 +1,7 @@
 fastapi[all]
+fastapi
+requests
+pinecone
+time
+langchain_groq
+langchain_core
