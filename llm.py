@@ -9,8 +9,7 @@ from langchain_core.prompts import PromptTemplate
 load_dotenv()
 
 index_name = "multi-pdf-collection"
-api_key=os.getenv("e6d17400-b5c0-4dca-8015-5f4c59ffaf80")
-pc=Pinecone(api_key)
+pc=Pinecone("e6d17400-b5c0-4dca-8015-5f4c59ffaf80")
 index = pc.Index(index_name)
 
 API_URL = "https://api-inference.huggingface.co/models/ggrn/e5-small-v2"
