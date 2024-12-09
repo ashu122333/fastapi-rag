@@ -84,6 +84,7 @@ def gen_ans(contents,query):
 
 
 def query(input):
+    input=input.lower()
     query_content=get_context(input)
     # print(query_content)
     answer=gen_ans(query_content,input)
